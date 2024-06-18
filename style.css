@@ -1,0 +1,154 @@
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    background-color: rgba(180, 180, 180);
+    font-size: 70px;
+    width: 750px;
+    height: 85px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+input {
+    font-size: 20px;
+    background-color: rgba(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+input::file-selector-button {
+    background-image: linear-gradient(
+      to right,
+      #ff7a18,
+      #af002d,
+      #319197 100%,
+      #319197 200%
+    );
+    background-size: 200%;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.40rem 1rem;
+    text-shadow: 0 1px 1px #333;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+input::file-selector-button:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:hover {
+    color: rgba(100, 100, 100);
+}
+
+button {
+    background-image: linear-gradient(
+      to right,
+      #ff7a18,
+      #af002d,
+      #319197 100%,
+      #319197 200%
+    );
+    cursor: pointer;
+    font-size: 20px;
+    background-size: 200%;
+    border: 0;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    padding: 0.40rem 1rem;
+    text-shadow: 0 1px 1px #333;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.container {
+    width: 100%;
+}
+
+.form-message {
+    width: 100%;
+    display: flex;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.alert.sucess {
+    background-color: #04AA6D;
+}
+
+.alert.info {
+    background-color: #2196F3;
+}
+
+.alert.warning {
+    background-color: #ff9800;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+
+progress {
+    background-color: lightgrey;
+    width: 250px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-value,
+progress::-moz-progress-bar {
+    background-image:
+      -webkit-linear-gradient(-45deg, 
+                              transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                              rgba(0,0, 0, .1) 66%, transparent 66%),
+      -webkit-linear-gradient(top, 
+                              rgba(255, 255, 255, .25), 
+                              rgba(0, 0, 0, .25)),
+      -webkit-linear-gradient(left, #09c, #f44);
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    border-radius: 2px;
+}
